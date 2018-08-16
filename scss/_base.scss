@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     // font-size: 1rem;
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 30px; /* this padding doesn't get inherited throughout */
     box-sizing: border-box; /*set the box model so the border and padding are no longer added to the total of the box model */
 }
