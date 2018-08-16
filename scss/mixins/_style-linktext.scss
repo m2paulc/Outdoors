@@ -1,0 +1,5 @@
+@mixin style-link-text($colr) {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $colr;
+}

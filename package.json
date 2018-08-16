@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/m2paulc/Outdoors/issues"
   },
-  "homepage": "https://github.com/m2paulc/Outdoors#readme"
+  "homepage": "https://github.com/m2paulc/Outdoors#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
 }
