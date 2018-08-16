@@ -10,12 +10,12 @@ header {
 /*set position based on the parent element*/
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .heading_text-box {
@@ -29,7 +29,7 @@ header {
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     backface-visibility: hidden; /*fixed for animation jerkiness - results to smooth animation*/
 }
 
@@ -38,9 +38,9 @@ header {
 /*we can style and position these elements to where we need them to be*/
 .heading-primary-main {
     display: block;
-    font-size: 3.75rem;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
@@ -49,9 +49,9 @@ header {
 
 .heading-primary-sub {
     display: block;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
     animation-name: moveInRight;
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
@@ -62,11 +62,11 @@ header {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
     
     100% {
@@ -78,11 +78,11 @@ header {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
     
     100% {

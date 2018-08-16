@@ -4,18 +4,19 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 15px 40px;
+        padding: 1.5rem 4rem;
         display: inline-block; /*this way the box model will work for this element - so padding and height would work*/
-        border-radius: 100px;
+        border-radius: 10rem;
         transition: all .3s;
         position: relative;
+        font-size: 1.6rem;
     }
     &:after {
         content: '';
         display: inline-block;
         height: 100%;
         width: 100%;
-        border-radius: 100px;
+        border-radius: 10rem;
         position: absolute;
         top: 0;
         left: 0;
@@ -24,7 +25,7 @@
     }
     &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
         &:after {
             transform: scaleX(1.25) scaleY(1.5);
             opacity: 0;
@@ -32,7 +33,7 @@
     }
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     }
 }
 
@@ -52,7 +53,7 @@
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
     
     100% {

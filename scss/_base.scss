@@ -1,10 +1,18 @@
 @import 'reset';
 
+html {
+    /* for easy calculations when implementing REM to elements
+    this translate to 10px since setting default pixel is never good as it is fixed.
+    we want end-users to be able to increase or decrease measurements for readability */
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    // font-size: 1rem;
     line-height: 1.7;
     color: #777;
     padding: 30px; /* this padding doesn't get inherited throughout */
+    box-sizing: border-box; /*set the box model so the border and padding are no longer added to the total of the box model */
 }
