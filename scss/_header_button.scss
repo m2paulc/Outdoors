@@ -35,19 +35,19 @@
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     }
-}
 
-.btn-white {
-    background-color: #fff;
-    color: #777;
-    &:after {
+    &--white {
         background-color: #fff;
+        color: #777;
+        &:after {
+            background-color: #fff;
+        }
     }
-}
-
-.btn-animated {
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
 }
 
 @keyframes moveInBottom {
