@@ -1,5 +1,3 @@
-@import 'header_button';
-
 header {
     height: 95vh;
     background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.5), rgba(40, 180, 131, 0.7)), url('../img/hero1.jpeg');
@@ -58,6 +56,8 @@ header {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
 }
+
+@import 'header_button';
 
 @keyframes moveInLeft {
     0% {

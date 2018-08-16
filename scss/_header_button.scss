@@ -20,22 +20,20 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: transform .3s ease-in, opacity .4s ease-out;
+        transition: all .4s ease-out;
     }
-}
-
-.btn:hover {
+    &:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
-    &:after {
-        transform: scaleX(1.25) scaleY(1.5);
-        opacity: 0;
+        &:after {
+            transform: scaleX(1.25) scaleY(1.5);
+            opacity: 0;
+        }
     }
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    }
 }
 
 .btn-white {
