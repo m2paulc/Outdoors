@@ -27,7 +27,7 @@
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 6rem;
     backface-visibility: hidden; /*fixed for animation jerkiness - results to smooth animation*/
