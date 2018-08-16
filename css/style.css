@@ -1,72 +1,71 @@
 /*
 COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
 */
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*set the box model so the border and padding are no longer added to the total of the box model */
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*set the box model so the border and padding are no longer added to the total of the box model */
+}
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #777;
-    padding: 30px; /* this padding doesn't get inherited throughout */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+  /* this padding doesn't get inherited throughout */
 }
 
 header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.8), rgba(40, 180, 131, 0.8)), url('../img/hero.jpg');
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    position: relative;     /*this set to relative because this is the parent element of logo-box*/
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(125, 213, 111, 0.5), rgba(40, 180, 131, 0.7)), url("../img/hero1.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  position: relative;
+  /*this set to relative because this is the parent element of logo-box*/
 }
 
 /*set position based on the parent element*/
 .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .logo {
-    height: 35px;
+  height: 35px;
 }
 
 .heading_text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -60%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -60%);
 }
 
 .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /*since span element is inline by nature*/
 /*we would make these classes block element so */
 /*we can style and position these elements to where we need them to be*/
 .heading-primary-main {
-    display: block;
-    font-size: 3.75rem;
-    font-weight: 400;
-    letter-spacing: 35px;
+  display: block;
+  font-size: 3.75rem;
+  font-weight: 400;
+  letter-spacing: 35px;
 }
 
 .heading-primary-sub {
-    display: block;
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 17.4px;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
+
+/*# sourceMappingURL=style.css.map */
