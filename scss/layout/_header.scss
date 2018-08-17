@@ -3,7 +3,7 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1.jpeg');
     background-size: cover;
     background-position: bottom;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;     /*this set to relative because this is the parent element of logo-box*/
 
     /*set position based on the parent element*/
@@ -57,36 +57,5 @@
     }
 }
 
-@import 'header_button';
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    
-    80% {
-        transform: translateX(1rem);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-    
-    80% {
-        transform: translateX(-1rem);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+@import '../components/header_button';
+@import '../base/animation';

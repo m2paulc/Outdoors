@@ -1,3 +1,7 @@
-@import 'variables';
-@import 'base';
-@import 'header';
+@import 'base/variables';
+@import 'mixins/clearfix';
+@import 'base/base';
+@import 'layout/header';
+@import 'components/utilities';
+@import 'layout/about';
+@import 'layout/grid';
