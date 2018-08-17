@@ -25,7 +25,7 @@
     }
     &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    box-shadow: 0 1rem 2rem rgba($color-black, .3);
         &:after {
             transform: scaleX(1.25) scaleY(1.5);
             opacity: 0;
@@ -33,7 +33,7 @@
     }
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .3);
     }
 
     &--white {
