@@ -5,6 +5,7 @@
 /*light-purple*/
 /*lightdark-blue*/
 /*GRID*/
+/*FONT SIZE*/
 *,
 *:before,
 *:after {
@@ -30,6 +31,54 @@ body {
   /* this padding doesn't get inherited throughout */
   box-sizing: border-box;
   /*set the box model so the border and padding are no longer added to the total of the box model */
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-med {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 60%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 3;
+  transition: all 0.3s ease-in;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  transform: scale(1.06) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
 }
 
 .header {
@@ -108,7 +157,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -177,22 +226,6 @@ body {
     transform: translateY(0);
   }
 }
-.u-center-text {
-  text-align: center;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 2rem;
-}
-
-.u-margin-bottom-med {
-  margin-bottom: 4rem;
-}
-
-.u-margin-bottom-large {
-  margin-bottom: 8rem;
-}
-
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;

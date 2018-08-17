@@ -9,7 +9,7 @@
         border-radius: 10rem;
         transition: all .3s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
     &:after {
         content: '';
@@ -21,11 +21,11 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all .4s ease-out;
+        transition: all .3s ease-out;
     }
     &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, .3);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .3);
         &:after {
             transform: scaleX(1.25) scaleY(1.5);
             opacity: 0;
