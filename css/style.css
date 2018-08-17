@@ -2,6 +2,7 @@
 /*Med-blue*/
 /*Light-blue*/
 /*Dark-blue*/
+/*light-purple*/
 /*lightdark-blue*/
 /*GRID*/
 *,
@@ -128,6 +129,13 @@ body {
 .btn--white:after {
   background-color: #fff;
 }
+.btn--purple {
+  background-color: #8080ff;
+  color: #fff;
+}
+.btn--purple:after {
+  background-color: #8080ff;
+}
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
@@ -173,11 +181,15 @@ body {
   text-align: center;
 }
 
-.u-margin-bottom-2 {
+.u-margin-bottom-small {
   margin-bottom: 2rem;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-med {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-large {
   margin-bottom: 8rem;
 }
 
@@ -191,7 +203,7 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: linear-gradient(to right, #709ACD, #1D3461);
+  background-image: linear-gradient(to right, #8080ff, #1D3461);
   -webkit-background-clip: text;
   /*this will clip background image to sit behind text*/
   display: inline-block;
@@ -220,7 +232,6 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: #eee;
   /*set attribute for dry coding*/
 }
 .row:not(:last-child) {
