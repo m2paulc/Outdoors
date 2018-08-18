@@ -1,10 +1,12 @@
 @import 'base/variables';
-@import 'mixins/clearfix';
 @import 'base/base';
+@import 'mixins/clearfix';
 @import 'components/utilities';
 @import 'components/composition';
 @import 'components/feature-box';
+@import 'components/card';
 @import 'layout/header';
 @import 'layout/about';
 @import 'layout/features';
+@import 'layout/tours';
 @import 'layout/grid';
