@@ -81,6 +81,27 @@ body {
   transform: scale(0.95);
 }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in;
+}
+.feature-box__icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to right, #8080ff, #1D3461);
+  -webkit-background-clip: text;
+  /*this will clip background image to sit behind text*/
+  display: inline-block;
+  color: transparent;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/hero1.jpeg");
@@ -260,6 +281,17 @@ body {
 }
 .paragraph:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
 }
 
 .row {
