@@ -49,6 +49,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-large {
+  margin-bottom: 8rem;
+}
+
 .composition {
   position: relative;
 }
@@ -106,11 +110,11 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 52rem;
   /*FRONT SIDE STYLING*/
 }
 .card__side {
-  height: 50rem;
+  height: 52rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -128,10 +132,10 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back--1 {
-  background-image: linear-gradient(to right bottom, #ffd700, #ff7730);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
 }
 .card__side--back--2 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 .card__side--back--3 {
   background-image: linear-gradient(to right bottom, #d592fc, #8b16a8);
@@ -150,10 +154,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffd700, #ff7730), url("../../img/nat-5-small.jpeg");
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../../img/nat-5-small.jpeg");
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../../img/nat-6.jpg");
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../../img/nat-6.jpg");
 }
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #d592fc, #8b16a8), url("../../img/nat-7.jpg");
@@ -175,7 +179,13 @@ body {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 215, 0, 0.85), rgba(255, 119, 48, 0.85));
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
+.card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+.card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(213, 146, 252, 0.85), rgba(139, 22, 168, 0.85));
 }
 .card__details {
   padding: 3rem;
@@ -191,7 +201,28 @@ body {
   padding: 1rem;
 }
 .card__details ul li:not(:last-child) {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 .header {
