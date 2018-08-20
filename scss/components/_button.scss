@@ -1,5 +1,6 @@
 // originally only an inline element
 .btn {
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -10,6 +11,10 @@
         transition: all .3s;
         position: relative;
         font-size: $default-font-size;
+        
+        /*for button element*/
+        border: none;
+        cursor: pointer;
     }
     &:after {
         content: '';
@@ -31,7 +36,9 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .3);
     }
