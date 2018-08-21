@@ -1,6 +1,7 @@
 @import 'base/variables';
 @import 'base/base';
 @import 'mixins/clearfix';
+@import 'mixins/abscenter';
 @import 'components/utilities';
 @import 'components/composition';
 @import 'components/feature-box';
@@ -15,5 +16,6 @@
 @import 'layout/testimonials';
 @import 'layout/booking';
 @import 'layout/footer';
+@import 'layout/popup';
 @import 'layout/navigation';
 @import 'layout/grid';
