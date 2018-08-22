@@ -6,6 +6,10 @@
   transform: skewY(-7deg);
   margin-top: -10rem;
   
+  @include responsiveness(tablet-portrait) {
+      padding: 10rem 0;
+  }
+  
   & > * {
     transform: skewY(7deg);
   }

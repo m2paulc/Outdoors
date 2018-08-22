@@ -3,8 +3,14 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1.jpeg');
     background-size: cover;
     background-position: bottom;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;     /*this set to relative because this is the parent element of logo-box*/
+    
+    @include responsiveness(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
     /*set position based on the parent element*/
     &__logo-box {
@@ -25,37 +31,3 @@
         text-align: center;
     }
 }
-
-.heading-primary {
-    color: $color-white;
-    text-transform: uppercase;
-    margin-bottom: 6rem;
-    backface-visibility: hidden; /*fixed for animation jerkiness - results to smooth animation*/
-
-    /*since span element is inline by nature*/
-    /*we would make these classes block element so */
-    /*we can style and position these elements to where we need them to be*/
-    &--main {
-        display: block;
-        font-size: 6rem;
-        font-weight: 400;
-        letter-spacing: 3.5rem;
-        animation-name: moveInLeft;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out;
-        // animation-delay: 1s;
-    }
-    
-    &--sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: 1.75rem;
-        animation-name: moveInRight;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out;
-    }
-}
-
-@import '../components/button';
-@import '../base/animation';

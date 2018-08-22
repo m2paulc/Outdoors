@@ -3,8 +3,20 @@
 html {
     /* for easy calculations when implementing REM to elements
     this translate to 10px since setting default pixel is never good as it is fixed.
-    we want end-users to be able to increase or decrease measurements for readability */
+    we want end-users to be able to increase or decrease measurements for readability
+    1 rem = 10px; 10/16px = 62.5% */
     font-size: 62.5%;
+    
+    /* order of responsiveness matters in order to apply the right media query */
+    @include responsiveness(tablet-portrait) {
+        /* set 1rem = 9px, 9/16px = 56.25% */
+        font-size: 56.25%;
+    }
+    
+    @include responsiveness(big-desktop) {
+        /* set 1rem = 12px, 12/16px = 75% */
+        font-size: 75%;
+    }
 }
 
 body {
@@ -13,6 +25,10 @@ body {
     // font-size: 1rem;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 30px; /* this padding doesn't get inherited throughout */
+    padding: 3rem; /* this padding doesn't get inherited throughout */
     box-sizing: border-box; /*set the box model so the border and padding are no longer added to the total of the box model */
+    
+     @include responsiveness(tablet-landscape) {
+        padding: 1.5rem; 
+    }
 }
