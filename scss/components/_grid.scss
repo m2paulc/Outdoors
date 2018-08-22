@@ -12,7 +12,12 @@
     }
     
     @include responsiveness(tablet-portrait) {
-        max-width: 50rem;
+        max-width: 65rem;
+        padding: 0 2rem;
+    }
+    
+    @include responsiveness(phone) {
+        max-width: 55rem;
         padding: 0 2rem;
     }
     

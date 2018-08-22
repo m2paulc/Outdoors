@@ -119,7 +119,13 @@ body {
 }
 @media (max-width: 56.25em) {
   .row {
-    max-width: 50rem;
+    max-width: 65rem;
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .row {
+    max-width: 55rem;
     padding: 0 2rem;
   }
 }
