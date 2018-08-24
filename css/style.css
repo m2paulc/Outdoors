@@ -1010,10 +1010,10 @@ body {
 }
 @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
   .section-features {
-    background-image: -webkit-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/nat-4-large.jpg");
-    background-image: -moz-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/nat-4-large.jpg");
-    background-image: -o-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/nat-4-large.jpg");
-    background-image: linear-gradient(to bottom right, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/nat-4-large.jpg");
+    background-image: -webkit-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/nat-4-large.jpg");
+    background-image: -moz-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/nat-4-large.jpg");
+    background-image: -o-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/nat-4-large.jpg");
+    background-image: linear-gradient(to bottom right, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/nat-4-large.jpg");
   }
 }
 @media (max-width: 56.25em) {

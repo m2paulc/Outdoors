@@ -10,10 +10,10 @@
   margin-top: -10rem;
   
   @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
-      background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/nat-4-large.jpg');
-      background-image: -moz-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/nat-4-large.jpg');
-      background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/nat-4-large.jpg');
-      background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/nat-4-large.jpg');
+      background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/nat-4-large.jpg');
+      background-image: -moz-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/nat-4-large.jpg');
+      background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/nat-4-large.jpg');
+      background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/nat-4-large.jpg');
   }
   
   @include responsiveness(tablet-portrait) {
