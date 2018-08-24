@@ -1153,6 +1153,12 @@ body {
   visibility: hidden;
   transition: all 0.3s ease-in;
 }
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .popup {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
 .popup__content {
   position: absolute;
   top: 50%;
