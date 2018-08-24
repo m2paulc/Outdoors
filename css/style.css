@@ -185,6 +185,7 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+  padding-top: 5rem;
   animation-name: moveInLeft;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
@@ -193,6 +194,7 @@ body {
   .heading-primary--main {
     letter-spacing: 1rem;
     font-size: 5rem;
+    padding-top: 2em;
   }
 }
 .heading-primary--sub {
