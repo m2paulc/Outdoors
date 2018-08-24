@@ -1,14 +1,18 @@
 .header {
-    height: 95vh;
+    height: 85vh;
     background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1-med.jpeg');
     background-image: -moz-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1-med.jpeg');
     background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1-med.jpeg');
     background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.5), rgba($color-primary-dark, 0.7)), url('../img/hero1-med.jpeg');
     background-size: cover;
     background-position: bottom;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;     /*this set to relative because this is the parent element of logo-box*/
+    
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        height: 95vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    }
     
     @media (min-resolution: 192dpi) and (min-width: 600px), 
            (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),

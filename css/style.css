@@ -475,12 +475,19 @@ body {
   float: left;
   /*float needed for shape-outside property*/
   background-color: aqua;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
+  overflow: hidden;
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
+}
+@supports (clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%)) {
+  .testimonial__shape {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border-radius: none;
+  }
 }
 @media (max-width: 37.5em) {
   .testimonial__shape {
@@ -490,6 +497,7 @@ body {
 .testimonial__img {
   height: 100%;
   transform: translateX(-4rem) scale(1.3);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.5s ease-in;
 }
@@ -512,6 +520,7 @@ body {
   text-align: center;
   opacity: 0;
   transition: all 0.5s ease-in;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .testimonial:hover .testimonial__caption {
@@ -674,6 +683,7 @@ body {
   }
   .card__side--back {
     transform: rotateY(0);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
   .card:hover .card__side--front {
@@ -933,18 +943,23 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: -webkit-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/hero1-med.jpeg");
   background-image: -moz-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/hero1-med.jpeg");
   background-image: -o-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/hero1-med.jpeg");
   background-image: linear-gradient(to bottom right, rgba(112, 154, 205, 0.5), rgba(29, 52, 97, 0.7)), url("../img/hero1-med.jpeg");
   background-size: cover;
   background-position: bottom;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
   /*this set to relative because this is the parent element of logo-box*/
   /*set position based on the parent element*/
+}
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .header {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
 }
 @media (min-resolution: 192dpi) and (min-width: 600px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-width: 2000px) {
   .header {
