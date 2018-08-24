@@ -10,7 +10,9 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;     /*this set to relative because this is the parent element of logo-box*/
     
-    @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+    @media (min-resolution: 192dpi) and (min-width: 600px), 
+           (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+           (min-width: 2000px) {
         background-image: -webkit-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/hero1-large.jpeg');
         background-image: -moz-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/hero1-large.jpeg');
         background-image: -o-linear-gradient(top left, rgba($color-primary-light, 0.5), rgba($color-primary-purple, 0.7)), url('../img/hero1-large.jpeg');

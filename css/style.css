@@ -944,7 +944,7 @@ body {
   /*this set to relative because this is the parent element of logo-box*/
   /*set position based on the parent element*/
 }
-@media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 2000px) {
+@media (min-resolution: 192dpi) and (min-width: 600px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px), (min-width: 2000px) {
   .header {
     background-image: -webkit-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/hero1-large.jpeg");
     background-image: -moz-linear-gradient(top left, rgba(112, 154, 205, 0.5), rgba(128, 128, 255, 0.7)), url("../img/hero1-large.jpeg");
