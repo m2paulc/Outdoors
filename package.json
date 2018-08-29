@@ -1,7 +1,7 @@
 {
   "name": "outdoors",
   "version": "1.0.0",
-  "description": "nature travel website",
+  "description": "outdoor adventures travel website",
   "main": "index.js",
   "scripts": {
     "watch:scss": "node-sass scss/main.scss css/style.css -w",
