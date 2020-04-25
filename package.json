@@ -9,11 +9,17 @@
     "concat:css": "concat -o docs/css/style.concat.css docs/css/icon-font.css docs/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 8 versions' docs/css/style.concat.css -o docs/css/style.prefix.css",
     "compress:css": "node-sass docs/css/style.prefix.css docs/css/style.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:scss concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:scss concat:css prefix:css compress:css",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/m2paulc/Outdoors.git"
+  },
+  "resolutions": {
+    "minimist": "1.2.5",
+    "mkdir": "0.5.5",
+    "kind-of": "6.0.3"
   },
   "keywords": [
     "outdoors"
