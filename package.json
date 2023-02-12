@@ -37,6 +37,6 @@
     "postcss-cli": "^7.1.2"
   },
   "dependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.3"
   }
 }
